@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* navbar */
+.navbar{
+    background-color: white;
+    display: flex;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+} 
+.navbar li{
+    margin-left: 3rem;
+    font-weight: bold;
+}
+.landingpage{
+    display: flex;
+    flex-direction: column;
+}
+.right img{
+   height: 500px;
+   width: 100%;
+   z-index: -1;
+}
+.emptyDiv{
+    background-color: rgba(0, 0, 0, 0.736);
+    width: 95%;
+    z-index: 999;
+    position:absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 440px;
+}
+ .title h1{
+    margin-top: 8rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    -webkit-animation: beat 0.25s infinite alternate;
+    animation: beat 0.25s infinite alternate;
+    transform-origin: center;
+}
+@-webkit-keyframes beat {
+    to {
+    transform: scale(1.03);
+    }
+}
+@keyframes beat {
+    to {
+transform: scale(1.03);
+    }
+}
+.right{
+   position: relative;
+}
+.easy{
+    margin-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.easySpan{
+   width: 60%;
+   margin-top: -1rem;
+}
+.parent{
+    background-color: rgba(71, 22, 76, 0.707);
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.1rem 15rem;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+.administrator{
+    background-color: rgba(71, 22, 76, 0.737);
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.1rem 10rem;
+    border: none;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    display: flex; 
+}
+.logo1{
+    margin-left: -8rem;
+    margin-top: 1.2rem;
+}
+.logo2{
+    margin-left: -13rem;
+    margin-top: 1.2rem;
+}
+.start{
+    padding: 0.5rem 4rem;
+    margin-top: 3rem;
+    border-radius: 8px;
+    border: none;
+   font-size: 1.3rem;
+}
+.admin{
+    margin-left: 0.5rem;
+}
+.whyChoose{
+    margin-top: 10rem;
+    text-align: start   ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.whyChoose div{
+   width: 80%;
+   font-size: 1.2rem;
+}
+.try{
+    display: flex;
+}
+.try img{
+    margin-top: 3rem;
+    width: 600px;
+    height: 300px;
+}
+.title{
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.title button{
+    padding: 1rem 3rem;
+    border: none;
+    background-color: rgb(71, 22, 76);
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.imgs{
+    margin-left: auto;
+}
+.imgsTwo{
+    width: 500px;
+    height: 300px;
+    margin-left: -4rem;
+    transition: all 0.3s ease-out;
+    box-shadow: 5px 8px 25px rgba(0, 0, 0, 0.083);
+}
+.about{
+    margin-left: 7rem;
+    margin-top: 0;   
+}
+.about :hover{
+    transform: translateY(-5px);
+}
+.why{
+    display: flex;
+}
+.whyAffiliatesPerks :hover{
+    transform: translateY(-5px);
+}
+.whyAffiliatesPerks{
+    padding: 15px 20px 20px;
+    margin: auto;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.manOnMoneyImage img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    background-color: rgba(71, 22, 76, 0.847);
+    padding: 1.5rem;
+    width: 250px;
+    height: 200px;   
+}
+.manOnMoneyBold {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 138%;
+    padding-bottom: 00.5rem;
+}
+.manOnMoneyNote{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+}
+.flexTwo{
+    display: flex;
+    margin-top: 4rem;
+    padding: 4rem;
+}
+.teacher{
+    margin: 4rem;
+    width: 500px;
+    height: 300px;
+    color: rgba(71, 22, 76, 0.847);
+    transition: all 0.3s ease-out;
+    /* box-shadow: 5px 8px 25px rgba(0, 0, 0, 0.083); */
+    padding: 1rem;
+} 

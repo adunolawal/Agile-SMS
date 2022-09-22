@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.parent-dashboard{
+    display: flex;
+}
+.side-bar{
+    font-size: 1.2rem;
+    background-color: white;
+    transition: all 0.3s ease-out;
+    box-shadow: 5px 8px 25px rgba(0, 0, 0, 0.083);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* background-color: #b7cee4; */
+    font-family: 'Montserrat', sans-serif;
+}
+.parent-profile{
+    border-radius: 8px;
+    background: #EEEEEE;
+    width: 50%;
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    display: flex;
+}
+.small-profile{
+    background-color: white;
+    border-radius: 40px;
+    height: 15px;
+    padding: 3px;
+}
+.parent-name{
+    margin-left: 10px;
+}
+.names{
+    font-weight: bolder;
+}
+.iconWords{
+    margin-left: -5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+.iconWords li{
+   padding: 1rem 3rem;
+   margin-left: -2rem;
+}
+.iconWords li:hover {
+    background-color: #EEEEEE;
+}
+.active{
+    background-color: #EEEEEE;
+}
+.log-out{
+    font-size: 0.8rem;
+    margin-left: -8rem;
+    margin-bottom: 3rem;
+    padding: 0.3rem;
+}
+.log-out:hover{
+    background-color: #EEEEEE;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    cursor: pointer;
+}
+.routes{
+    margin-left: 0.5rem;
+}
+.welcome{
+    display: flex;
+    background-color: #EEEEEE;
+    width: 102%;
+    margin-left: -1rem;
+    padding-left: 5rem;
+    transition: all 0.3s ease-out;
+    box-shadow: 4px 2px 3px rgba(0, 0, 0, 0.083);
+}
+.welcome span{
+    margin-top: 21px;
+    margin-left: 0.4rem;
+}
+.child-data{
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+    box-shadow: 5px 8px 25px rgba(0, 0, 0, 0.083);
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.child-image{
+    background-color: #EEEEEE;
+    border-radius: 40px;
+    padding: 0.4rem;
+    font-size: 1.8rem;
+    height: 30px;
+}
+.child-name{
+    display: flex;
+}
+.nameDiv{
+   display: flex;
+    margin-left: 1.3rem;
+}
+.child-data button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: rgb(14, 29, 131);
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.child-data button:hover{
+    background-color: rgb(56, 179, 207);
+}
+.nameDiv div{
+    margin-bottom: 1rem;
+}
+.childDets{
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.details-arrange{
+    display: flex;
+}
+.payment{
+    cursor: pointer;
+    margin-left: 15rem;
+    margin-top: 2rem;
+    padding: 0.4rem 3rem 0.5rem 3rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(14, 29, 131);
+}
+.feeDiv{
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+    box-shadow: 5px 8px 25px rgba(0, 0, 0, 0.083);
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+}
+.school-fee{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+.ngn{
+    margin-bottom: 1rem;
+}
+.transaction-details{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.transaction-details thead{
+    background-color:#EEEEEE ;
+    transition: all 0.3s ease-out;
+    box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.083);
+    padding: 0.5rem ;
+}
+.transaction-details td{
+    padding: 1rem;
+}
+.history{
+    margin-top: 1rem;
+}
+.ngnTwo{
+    font-size: 0.8rem;
+}
+.bgnd{
+    background-color: rgba(112, 109, 109, 0.309);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    height: 700px;
+    z-index: 10;
+    width: 100%;
+    margin-left: -1rem;
+}
+.modal {
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2rem;
+    font-size: 1.1rem;
+    margin: auto;
+    border-radius: 5px;
+    margin-left: 8rem;
+    transition: all 0.3s ease-out;
+    box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.083);
+    top: 10rem;
+}
+.btns{
+    display: flex;
+}
+.btns button{
+    background-color: navy;
+    padding: 0.5rem 2rem;
+    border: none;
+    color: white;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    border-radius: 2px;
+    font-family:'Montserrat', sans-serif ;
+    cursor: pointer;
+}
+
+/* Result */
+.nameDetails{
+    display: flex;
+    margin-top: -1rem;
+}
+.nameDetails span{
+    margin-right: 4rem;
+    margin-left: 0.5rem;
+}
+.result table{
+    margin-top: -0.5rem;
+    margin-left: 1rem;
+    border: 1px solid black;
+    transition: all 0.3s ease-out;
+    box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.083);
+}
+.result td{
+    padding: 0.5rem 1rem;
+}
+.result thead{
+   border-bottom: 2px solid black;
+}
+.resultbox{
+    border: 2px solid black;
+    padding: 1rem;
+}
+.commentDetails{
+    display: flex;
+}
+.commentDetails h4{
+    margin-left: 0.5rem;
+}
+.flexResult {
+    display: flex;
+}
+.grades{
+    margin-left: 3rem;
+}
+.total{
+    font-weight: bold;
+    margin-top: 4rem;
+}
