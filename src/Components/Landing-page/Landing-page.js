@@ -6,19 +6,22 @@ import '../Landing-page/Landing-page.css'
 import stock from './ImagesTwo/stock.png'
 import { FiChevronsDown } from "react-icons/fi";
 import { ImProfile , ImUserTie } from "react-icons/im";
-import Navbar from './Navbar';
+import Navbartwo from './Navbartwo';
+import {Link } from "react-router-dom"
 
 
 const LandingPage = () => {
+
     return ( 
         <div className='landingpage'>
-            <Navbar></Navbar>
+            <Navbartwo />
             <div className='try'>
                 <div className='title'>
                     <h1>School Management<br></br> System</h1>
                     <span> A multi-faceted system providing teamwork between Schools and Parents </span>
-                    <button>Join us Today</button>  <button>Sign In</button>
+                    <button ><Link to="/signIn"> Join us Today</Link></button>  <button>Sign In</button>
                 </div>
+            
                 <div className='imgs'>
                     <img src={card2} alt="Parents"></img>
                 </div>
@@ -67,44 +70,44 @@ const LandingPage = () => {
                 </div>  
             </div> 
             <div className='flexTwo'>
-                <div class="whyAffiliatesPerks" >
-                    <div class="manOnMoneyImage">
+                <div className="whyAffiliatesPerks" >
+                    <div className="manOnMoneyImage">
                         <img src={Money} alt="Money"></img>
                     </div>
-                    <div>
-                        <div class="manOnMoneyBold" >
+                    <div className='width'>
+                        <div className="manOnMoneyBold" >
                             Fast and Easy fees payment  
                         </div>
-                        <div class="manOnMoneyNote">
+                        <div className="manOnMoneyNote">
                             SMS allows direct payment to the school.
                             We provide firm foundation for the school's financial data 
                             by ensuring that transactions are monitored and validated fast with ease.
                         </div>
                     </div>
                 </div>
-                <div class="whyAffiliatesPerks">
-                    <div class="manOnMoneyImage">
+                <div className="whyAffiliatesPerks">
+                    <div className="manOnMoneyImage">
                         <img src={Phone} alt="Phone"></img>
                     </div>
                     <div>
-                        <div class="manOnMoneyBold">
+                        <div className="manOnMoneyBold">
                             Stress free result compilation 
                         </div>
-                        <div class="manOnMoneyNote">
+                        <div className="manOnMoneyNote">
                             Our platform is equipped with a fast, 100% accurate, and effortless result compilation
                             of all students which can be easily accessed on our user friendly and intuitive interface by parents.
                         </div>
                     </div>
                 </div>
-                <div class="whyAffiliatesPerks" >
-                    <div class="manOnMoneyImage">
+                <div className="whyAffiliatesPerks" >
+                    <div className="manOnMoneyImage">
                         <img src={Call} alt="Call"></img>
                     </div>
                     <div>
-                        <div class="manOnMoneyBold">
+                        <div className="manOnMoneyBold">
                             Training and Support
                         </div>
-                        <div class="manOnMoneyNote">
+                        <div className="manOnMoneyNote">
                             Change can be daunting and we know. Our experts and support system are here to train and assist you
                             with unlimited support.
                         </div>

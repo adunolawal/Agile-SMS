@@ -6,7 +6,7 @@ import {RiArrowDownSFill ,  RiArrowUpSFill} from "react-icons/ri";
 export const SchoolSidebar = [
     {
         title: 'Home',
-        path: '/',
+        path: '/School-Dashboard',
         icon: <BiHome></BiHome>
     },
     {
@@ -27,40 +27,40 @@ export const SchoolSidebar = [
         iconOpened: <RiArrowUpSFill />,
         subNav: [
            {
-            title: 'Student Form',
+            title: 'Student-Form',
             path: '/Forms/Student-Form',
             icon:   <FaWpforms />
            },
            {
-            title: 'Parent Form',
+            title: 'Parent-Form',
             path: '/Forms/Parent-Form',
-            icon:   <FaWpforms />
+            icon:  <FaWpforms />
            },
            {
-            title: 'Staff Form',
+            title: 'Staff-Form',
             path: '/Forms/Staff-Form',
-            icon:   <FaWpforms />
+            icon:  <FaWpforms />
            }
         ]
     },
     {
         title: 'Result',
-        path: '/Result',
+        path: '/SchoolResults',
         icon:   <FaRegAddressCard />
     },
     {
         title: 'Payments',
-        path: '/Payments',
+        path: '/SchoolPayment',
         icon:  <FaRegAddressCard />
     },
     {
         title:  'Calendar',
-        path: '/Calendar',
+        path: '/SchoolCalendar',
         icon:  <BiCalendarEdit />
     }, 
     {
         title:  'Account',
-        path: '/Account',
+        path: '/SchoolAccount',
         icon:  <BiCalendarEdit />
     }
 ]

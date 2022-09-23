@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SchoolDashboard from "../SchoolDashboard";
 import data from "./Data/studentsmockdata.json"
 
 const Students = () => {
@@ -7,7 +8,9 @@ const Students = () => {
     // setStudentProfile
 
     return ( 
-        <div className="students">
+       <div style={{display : "flex",minHeight : "100vh" }}>
+            <SchoolDashboard />
+         <div className="students">
             <h3>Total number of Students : 550</h3>
             <input type="search" placeholder="Search for students" ></input>
             <table>
@@ -49,6 +52,7 @@ const Students = () => {
                 </div>
             </div> */}
         </div>
+       </div>
      );
 }
  

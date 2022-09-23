@@ -1,9 +1,12 @@
 import "../Parent-Dashboard.css";
 import { BiUser } from "react-icons/bi";
+import ParentDashboard from "../Parent-Dashboard";
 
 const Home = () => {
     return ( 
-        <div>
+        <div  style={{display : "flex",minHeight : "100vh" }}>
+             <ParentDashboard />
+            <div>
             <div className="welcome">
                 <h3>Welcome to LandMark College </h3><span> School Management System</span>
             </div>
@@ -67,6 +70,8 @@ const Home = () => {
             </div>
             <button className="payment"> Pay for All </button>
         </div>
+        </div>
+
     );
 }
  

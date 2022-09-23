@@ -1,18 +1,8 @@
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-import SchoolHome from './SchoolDashboardPerks/SchoolHome';
+import { Link} from 'react-router-dom';
 import { SchoolSidebar } from './SchoolSidebar';
 import '../SchoolDashboard/SchoolDashboard.css';
 import { GrOrganization} from "react-icons/gr";
-import Students from './SchoolDashboardPerks/Students';
-import SchoolParents from './SchoolDashboardPerks/SchoolParents';
-import SchoolResults from './SchoolDashboardPerks/SchoolResults';
-import SchoolCalendar from './SchoolDashboardPerks/SchoolCalendar';
 import { useState } from 'react';
-import StudentForm from './SchoolDashboardPerks/SchoolForms/StudentForm';
-import ParentForm from './SchoolDashboardPerks/SchoolForms/ParentForm';
-import Forms from './SchoolDashboardPerks/SchoolForms/Forms';
-import SchoolAccount from './SchoolDashboardPerks/SchoolAccount';
-// import { ImInsertTemplate } from 'react-icons/im';
 
 const SchoolDashboard = () => {
 
@@ -23,7 +13,6 @@ const SchoolDashboard = () => {
 
     return ( 
         <div className='schoolDashboard'>
-            <Router>
                 <div className='sideBar'>
                     <div className='smallProfile'>
                         <span><GrOrganization /> </span>
@@ -56,19 +45,7 @@ const SchoolDashboard = () => {
                     </ul>
                 </div>
                 <div className='routes'>
-                    <Routes>
-                        <Route path='/' exact element={<SchoolHome />} />   
-                        <Route path='/Students' element={<Students /> } />  
-                        <Route path='/Parents' element={<SchoolParents/> } />    
-                        <Route path='/Forms' element={<Forms /> } />    
-                        <Route path='/Forms/Student-Form' element={<StudentForm /> } />    
-                        <Route path='/Forms/Parent-Form' element={<ParentForm /> } />   
-                        <Route path='/Result' element={<SchoolResults /> } />     
-                        <Route path='/Calendar' element={<SchoolCalendar /> } />   
-                        <Route path='/Account' element={<SchoolAccount /> } />  
-                    </Routes>
-                </div>
-            </Router>
+            </div>
         </div>
     );
 }

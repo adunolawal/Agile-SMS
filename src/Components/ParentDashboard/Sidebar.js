@@ -4,7 +4,7 @@ import {  MdMonetizationOn } from "react-icons/md";
 export const Sidebar = [
     {
         title: 'Home',
-        path: '/',
+        path: '/Parent-Dashboard',
         icon: <BiHome></BiHome>
     },
     {

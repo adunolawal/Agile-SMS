@@ -1,23 +1,20 @@
-import Home from "./Dashboard-perks/Home";
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
-import Payment from "./Dashboard-perks/Payment";
+import {Link} from  "react-router-dom"
+
 import { FiUser, FiLogOut } from "react-icons/fi";
 import {Sidebar} from "./Sidebar"
 import  "./Parent-Dashboard.css"
-import Transactions from "./Dashboard-perks/Transactions";
+
 import { useState } from "react";
-import Result from "./Dashboard-perks/Result";
 
-const ParentDashboard = () => {
-    const [logoutPop, setLogoutPop] = useState(false)
+const ParentDashboard = (props) => {
+    const [logoutPop, setLogoutPop] = useState(false);
 
-    const togglepopUp = () =>{
+    const togglepopUp = () => {
         setLogoutPop(!logoutPop)
     }
 
     return (
-        <div className="parent-dashboard">
-            <Router>
+        <div className="parent-dashboard">  
                 <div className="side-bar">
                     <div className="parent-profile">
                         <div className="small-profile">
@@ -30,13 +27,13 @@ const ParentDashboard = () => {
                     </div>
                    <div className="iconWords">
                         <ul className="side-ul">
-                            { Sidebar.map((i,index) => {
-                            return( <li className="side-li" key={index}  activeclassName="active" >
-                            <Link to={i.path}  >
-                                <span>{i.icon} </span>
-                                <span>{i.title}</span>
-                            </Link>
-                            </li>) }) }
+                            { Sidebar.map((i, key) => {
+                            return( <div  key={key} > 
+                                <Link to={i.path} >
+                                <li>{i.title}</li>  
+                            </Link> 
+                            </div> )
+                        })}
                         </ul>
                    </div>
                    <div className="log-out">
@@ -44,13 +41,7 @@ const ParentDashboard = () => {
                         <span onClick={togglepopUp} >Log out</span>
                    </div>
                 </div>
-                <div className="routes">
-                    <Routes>
-                        <Route path='/' exact element={<Home></Home>} />
-                        <Route path='/Payment' element={<Payment></Payment> } />
-                        <Route path='/Transactions' element={ <Transactions> </Transactions>} />
-                        <Route path='/Result' element={ <Result> </Result>} />
-                    </Routes>
+                <div className="routes">                
                     {logoutPop && 
                         <div className="bgnd" onClick={togglepopUp}> 
                             <div className="modal">
@@ -63,7 +54,7 @@ const ParentDashboard = () => {
                         </div>
                     }
                 </div>
-            </Router> 
+    
         </div>
     );
 }

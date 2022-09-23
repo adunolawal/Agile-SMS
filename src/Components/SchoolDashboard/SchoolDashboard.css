@@ -152,7 +152,6 @@ a{
 /* Forms */
 .forms{
     margin-left: 1rem;
-    width: 150%;
 }
 .forms input{
     border: 1px solid;
@@ -327,7 +326,7 @@ form label{
 .flexTwo{
     display: flex;
     margin-left: 1rem;
-    width: 150%;
+    width: 140%;
 }
 .history{
     width: 100%;

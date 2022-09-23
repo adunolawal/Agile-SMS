@@ -1,6 +1,9 @@
+import SchoolDashboard from "../../SchoolDashboard";
+
 const Staff = () => {
     return ( 
-        <div>
+        <div style={{display : "flex", minHeight : "100vh" }}>
+            <SchoolDashboard />  
             <div className="newProfile">
                 <h3>Register New Staff</h3>
                 <form className="newStudent">

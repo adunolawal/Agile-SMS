@@ -8,16 +8,15 @@
 .navbar ul{
     list-style-type: none;
     display: flex;
-    margin-left: auto;
 } 
 .navbar li{
     margin-left: 3rem;
     font-weight: bold;
 }
-.landingpage{
+/* .landingpage{
     display: flex;
     flex-direction: column;
-}
+} */
 .right img{
    height: 500px;
    width: 100%;
@@ -169,7 +168,7 @@ transform: scale(1.03);
     margin-top: 2rem;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 50%;
 }
 .manOnMoneyImage img{
     display: flex;
@@ -193,16 +192,8 @@ transform: scale(1.03);
    line-height: 150%;
 }
 .flexTwo{
-    display: flex;
-    margin-top: 4rem;
-    padding: 4rem;
+  
 }
-.teacher{
-    margin: 4rem;
-    width: 500px;
-    height: 300px;
-    color: rgba(71, 22, 76, 0.847);
-    transition: all 0.3s ease-out;
-    /* box-shadow: 5px 8px 25px rgba(0, 0, 0, 0.083); */
-    padding: 1rem;
-} 
+.width{
+    width: 50%;
+}

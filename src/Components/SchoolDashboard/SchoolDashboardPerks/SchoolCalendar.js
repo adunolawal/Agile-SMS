@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SchoolDashboard from "../SchoolDashboard";
 
 const SchoolCalendar = () => {
 
@@ -42,22 +43,25 @@ const SchoolCalendar = () => {
     }
 
     return ( 
-        <div className="calendar">
-            <h3>School Calendar</h3>
-            <div>
-                <form onSubmit={handleSubmit}>
-                    <textarea className="heytext" name="todo" onChange={handleAddition} required placeholder="Enter your Event" />
-                    <input type="text" name="date" onChange={handleAddition} required placeholder="Enter the date" />
-                    <button onClick={handleSubmit} className="calendarBtn">Submit</button>
-                </form>
-            </div>
-            <div>
-                <h3>Activities</h3>
-                {activity.map((activity, index) => {
-                    return <div key={index} className="activityOutput">
-                        <span>{activity.todo}</span> <span> {activity.date}</span>
-                    </div>
-                } ) }
+        <div  style={{display : "flex",minHeight : "100vh" }}>
+            <SchoolDashboard />
+            <div className="calendar">
+                <h3>School Calendar</h3>
+                <div>
+                    <form onSubmit={handleSubmit}>
+                        <textarea className="heytext" name="todo" onChange={handleAddition} required placeholder="Enter your Event" />
+                        <input type="text" name="date" onChange={handleAddition} required placeholder="Enter the date" />
+                        <button onClick={handleSubmit} className="calendarBtn">Submit</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Activities</h3>
+                    {activity.map((activity, index) => {
+                        return <div key={index} className="activityOutput">
+                            <span>{activity.todo}</span> <span> {activity.date}</span>
+                        </div>
+                    } ) }
+                </div>
             </div>
         </div>
     );
