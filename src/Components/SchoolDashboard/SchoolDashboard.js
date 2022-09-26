@@ -22,8 +22,8 @@ const SchoolDashboard = () => {
                         {SchoolSidebar.map((i,index) => {
                             return( 
                                <div key={index}>
-                                    <Link to={i.path}  key={index} onClick={i.subNav && showSubnav} >
-                                        <li >
+                                    <Link to={i.path} key={index} onClick={i.subNav && showSubnav} >
+                                        <li>
                                             <span>{i.icon} </span>
                                             <span>{i.title}</span>
                                             <div>

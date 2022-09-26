@@ -4,13 +4,23 @@ import Phone from './ImagesTwo/Phone.svg';
 import Call from './ImagesTwo/Call.svg';
 import '../Landing-page/Landing-page.css'
 import stock from './ImagesTwo/stock.png'
-import { FiChevronsDown } from "react-icons/fi";
+import { FiChevronsDown, FiChevronsUp } from "react-icons/fi";
 import { ImProfile , ImUserTie } from "react-icons/im";
 import Navbartwo from './Navbartwo';
 import {Link } from "react-router-dom"
+import { useState } from 'react';
 
 
 const LandingPage = () => {
+
+    const [drop , setDrop] = useState(false);
+    const showDropdown = () => {
+        setDrop(!drop)
+    }
+    const [droptwo , setDroptwo] = useState(false);
+    const showDropdowntwo = () => {
+        setDroptwo(!droptwo)
+    }
 
     return ( 
         <div className='landingpage'>
@@ -19,9 +29,9 @@ const LandingPage = () => {
                 <div className='title'>
                     <h1>School Management<br></br> System</h1>
                     <span> A multi-faceted system providing teamwork between Schools and Parents </span>
-                    <button ><Link to="/signIn"> Join us Today</Link></button>  <button>Sign In</button>
-                </div>
-            
+                    <Link to="signUp"> <button className='btnOne'>Join us Today</button></Link> 
+                    <Link to="/signIn"><button className='btnTwo'>Sign In</button></Link>
+                </div>         
                 <div className='imgs'>
                     <img src={card2} alt="Parents"></img>
                 </div>
@@ -33,33 +43,48 @@ const LandingPage = () => {
                     streamline operations and reduce resources and costs within your school organization.
                 </p>
                 <div>
-                    <div className='administrator'>
+                    <div className='administrator' onClick={showDropdown}>
                         <div className='logo1'>
                             <ImProfile></ImProfile>
                         </div>
                         <div className='admin'>
                             <p>School administrators</p>
                         </div>
-                        <FiChevronsDown></FiChevronsDown>
+                        <div className='logoDown'  >
+                            {  <FiChevronsDown/> && !drop ? <FiChevronsDown /> : <FiChevronsUp/> }                
+                        </div>
                     </div>
-                    <button className='parent'>
+                    {drop && <ul className='dropone'>
+                        <li > Monitor School activity</li>
+                        <li >Prevent financial leakages</li>
+                        <li> Increase efficiency by 100% </li>
+                    </ul> }
+                    <button className='parent' onClick={showDropdowntwo}>
                         <div className='logo2'>
                             <ImUserTie></ImUserTie>
                         </div>
                         <div className='admin'>
                             <p>Parents</p>
                         </div>
-                        <FiChevronsDown></FiChevronsDown>
+                        <div className='logoDown'>
+                        {  <FiChevronsDown/> && !droptwo ? <FiChevronsDown /> : <FiChevronsUp/> }                     
+                        </div>
                     </button>
                 </div>
+                {droptwo && <ul className='droptwo'>
+                        <li> Monitor your child's school activity performance from anywhere. </li>
+                        <li> Easily pay school fees from the comfort of your home. </li>
+                        <li> Get notified about your child's school activities. </li>
+                        <li>Generate reports with ease</li>
+                    </ul> }
             </div>
             <div className='whyChoose'>
+            <h1>Why Choose us?</h1>
                 <div className='why'>
                     <div>
                         <img className='imgsTwo' src={stock} alt="children"></img>
                     </div>
                     <div className='about'>
-                        <h2>Why Choose us?</h2>
                         We provide a perfect framework that the Nigerian education system needs. 
                         The complexity in managing school operations can be reduced with the help of School Management System.
                         We provide unique communication and workflow tools to keep
@@ -69,12 +94,12 @@ const LandingPage = () => {
                     </div>
                 </div>  
             </div> 
-            <div className='flexTwo'>
+            <div className='reasons'>
                 <div className="whyAffiliatesPerks" >
                     <div className="manOnMoneyImage">
                         <img src={Money} alt="Money"></img>
                     </div>
-                    <div className='width'>
+                    <div>
                         <div className="manOnMoneyBold" >
                             Fast and Easy fees payment  
                         </div>
@@ -114,9 +139,25 @@ const LandingPage = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                {/* <img className='teacher' src={Teachers} alt="education"></img> */}
-            </div>
+            <footer>
+                <div class="footer">
+                    <div class="footerList">
+                        <ul>
+                            <li>About us</li>
+                            <li>Contact us</li>
+                            <li>Featurs</li>
+                            <li>How it works</li>
+                            <li>Help and support</li>
+                            <li>Terms and Conditions</li>
+                        </ul>
+                    </div>
+                    <div class="iconAndCopyright">
+                        <div class="copyright">
+                            © Copyright 2022
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     );
 }

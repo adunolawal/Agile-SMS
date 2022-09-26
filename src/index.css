@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #E5E5E5;
+  --title-load-delay: 0ms;
 }
 
 code {

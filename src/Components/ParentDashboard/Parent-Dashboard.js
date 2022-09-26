@@ -30,7 +30,7 @@ const ParentDashboard = (props) => {
                             { Sidebar.map((i, key) => {
                             return( <div  key={key} > 
                                 <Link to={i.path} >
-                                <li>{i.title}</li>  
+                                <li> {i.icon}{i.title}</li>  
                             </Link> 
                             </div> )
                         })}
@@ -48,7 +48,7 @@ const ParentDashboard = (props) => {
                                 Are you sure you want to log out
                                 <div className="btns"> 
                                     <button onClick={togglepopUp}> Go back </button>
-                                    <button> Log out </button>   
+                                    <Link to="/signIn"><button> Log out </button></Link>   
                                 </div>
                             </div>
                         </div>

@@ -11,7 +11,7 @@ const SchoolHome = () => {
         <SchoolDashboard />
             <div className="schoolHome">
                 <div className="adminAll">
-                    <div className="admin">
+                    <div className="adminName">
                         <p>Admin</p>
                         <p>John Smith</p>
                     </div>
