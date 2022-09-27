@@ -482,12 +482,15 @@ transform: scale(1.03);
     .title h1{
         font-size: 2rem;
         margin-top: 1rem;
+        text-align: center;
+        margin-left: -1rem;
     }
     .navbar button{
         margin-left: 1rem;
     }
     .title span{
         font-size: 10px;
+        margin-left: -2rem;
     }
     .btnOne{
         width: 180px;

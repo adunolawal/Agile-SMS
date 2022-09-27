@@ -59,6 +59,8 @@ a{
 /* Home */
 .schoolHome {
     width: 100.5%;
+    height: 100vh;
+    overflow: scroll;
 }
 .schoolHome h3{
     margin-left: 0.5rem;
@@ -368,4 +370,40 @@ form label{
     font-family: 'Montserrat', sans-serif;
     padding: 0.5rem 3rem;
     margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 900px) {
+    .schoolHome{
+        margin-left: -4rem;
+    }
+    .flexthree{
+        flex-direction: column;
+    }
+    .flexAll{
+        flex-direction: column;
+    }
+    .people{
+        width: 70%;
+    }
+    .sideBar{
+        font-size: 0.8rem;
+        width: 60%;
+    }
+    .students{
+        margin-left: -3rem;
+        height: 100vh;
+        overflow: scroll;
+    }
+    .students th{
+        padding: 0.3rem 0.7rem;
+        font-size: 12px;
+    }
+    .students table{
+        margin-left: -0.5rem;
+    }
+    .students td{
+        padding: 0.5rem;
+        font-size: 10px;
+    }
 }

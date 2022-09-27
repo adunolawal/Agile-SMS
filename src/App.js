@@ -21,10 +21,9 @@ import ParentForm from './Components/SchoolDashboard/SchoolDashboardPerks/School
 
 function App() {
   return (
-  
-     <div className='App'>
-       <BrowserRouter >
-          <Routes>
+    <div className='App'>
+      <BrowserRouter >
+        <Routes>
             <Route path="/" element={ <LandingPage/> } />
             <Route path="/signUp" element={ <SignUp /> } />
             <Route path="/signIn" element={ <SignIn />} />
@@ -43,11 +42,9 @@ function App() {
             <Route path="/Forms/Student-Form" element={ <StudentForm />  } /> 
             <Route path="/Forms/Parent-Form" element={ <ParentForm />  } /> 
             <Route path="/Forms/Staff-Form" element={ < Staff /> } /> 
-          </Routes>
-       </BrowserRouter>
-     </div>
-
-   
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

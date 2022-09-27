@@ -4,16 +4,16 @@ const Transactions = () => {
     return ( 
        <div  style={{display : "flex",minHeight : "100vh" }}>
             <ParentDashboard />
-            <div>
+            <div className="transaction">
                 <div>
                     <h3>Transactions</h3>
                 </div>
                 <div className="feeDiv"  >
-                    <span > Outstanding Fee: </span>
+                    <span> Outstanding Fee: </span>
                     <span className="school-fee">500,000 </span> <span className="ngn">NGN</span>
                 </div>
                 <div>
-                    <h5 className="history">Transactions History</h5>
+                    <h5 className="Transact-history">Transactions History</h5>
                     <div className="transaction-details">
                         <table>
                             <thead>

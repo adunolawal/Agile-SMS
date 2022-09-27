@@ -18,8 +18,9 @@ ul{
     align-items: center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 .parent-profile{
     border-radius: 8px;
@@ -174,7 +175,7 @@ ul{
 .transaction-details td{
     padding: 1rem;
 }
-.history{
+.Transact-history{
     margin-top: 1rem;
 }
 .ngnTwo{
@@ -280,15 +281,28 @@ ul{
         width: 60%;
     }
     .welcome{
-        padding-left: 2rem;    
+        padding-left: 2rem;   
+    }
+    .welcome span{
+        margin-left: 0.4rem;
     }
 
 }
 
-@media screen and (max-width: 1200px) {
-    /* .parent-profile{
-        display: none;
-    } */
+@media screen and (max-width: 700px) {
+    .parent-profile{
+        margin-left: 0rem;
+        width: 40%;
+        font-size: 0.5rem;
+        flex-direction: column;
+    }
+    .parent-profile span{
+        margin-left: -1rem;
+        font-size: 0.4rem;
+    }
+    .names{
+        margin-left: -1rem;
+    }
     .child-name{
         flex-direction: column;
     }
@@ -306,5 +320,110 @@ ul{
     .log-out{
         margin-left: -2rem;
     }
-    
+    .welcome{
+        margin-left: 0rem;
+       width: 100%;
+       padding-left: 1.5rem;
+    }
+    .welcome h3{
+        font-size: 10px;
+        margin-left: -1.5rem;
+    }
+    .parent-home{
+        margin-left: -1rem;
+        height: 100vh;
+        overflow: scroll;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .parent-home h2{
+        font-size: 18px;
+    }
+    .welcome span{
+        margin-left: 0rem;
+        font-size: 10px;
+        margin-top: 11px;
+    }
+    .child-data{
+        margin-left: 0rem;
+        padding: 0.5rem;
+    }
+    .nameDiv{
+        margin-left: 0rem;
+        font-size: 13px;
+    }
+    .childDets{
+        margin-left: 0rem;
+    }
+    .payment{
+        margin-left: 3rem;
+    }
+
+    /* result */
+    .resultbox{
+        padding: 0.5rem;
+    }
+    .result table{
+        font-size: 13px;
+        margin-left: -1rem;
+        border: 0px solid black;
+    }
+    .result h3{
+        font-size: 13px;
+        margin-bottom: -5px;
+    }
+    .result{
+        margin-left: -1rem;
+        height: 100vh;
+        overflow: scroll;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .grades{
+        margin-left: 1rem;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .flexResult{
+        flex-direction: column;
+    }
+    .result h4{
+        font-size: 13px;
+    }
+    .total{
+        margin-top: 2rem;
+    }
+    .nameDetails{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    /* transaction */
+    .transaction {
+        margin-left: -1rem;
+    }
+    .feeDiv{
+        padding: 0.5rem;
+        width: 70%;
+    }
+    .school-fee{
+        font-size: 1.5rem !important;
+        margin-left: 1rem;
+    }
+    .feeDiv span{
+        font-size: 13px;
+    }
+    .transaction-details {
+        margin-left: -1rem;
+    }
+    .transaction-details td{
+        padding: 0.2rem 0.3rem;
+        font-size: 10px;
+    }
+    .ngnTwo{
+        font-size: 0.4rem;
+    }
 }

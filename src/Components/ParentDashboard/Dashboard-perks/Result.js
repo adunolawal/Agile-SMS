@@ -11,7 +11,7 @@ const Result = () => {
         <div  style={{display : "flex",minHeight : "100vh" }}>
             <ParentDashboard />
             <div className="result">
-                <h3>Result</h3>
+                <h2>Result</h2>
                 {/* <img src={Empty} alt="loading.."></img> */}
                 <div  className="resultbox">
                     <div className="nameDetails">
